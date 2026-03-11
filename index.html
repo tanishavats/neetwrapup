@@ -6,9 +6,9 @@
 <title>NEET WrapUp</title>
 <style>
 body{
-    font-family: Arial, sans-serif;
     margin:0;
-    background:#0a3d62;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg,#0f172a,#020617);
     color:white;
 }
 
@@ -33,8 +33,8 @@ nav a{
 /* HERO SECTION */
 .hero{
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
     padding:40px;
     flex-wrap:wrap;
 }
@@ -73,18 +73,14 @@ nav a{
     max-width:350px;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,0.3);
+    text-align:center;
 }
-.card img{
-    width:100%;
-    border-radius:6px;
-}
-.btn{
-    display:inline-block;
+.card button{
     margin-top:10px;
     padding:8px 15px;
     background:#0a3d62;
     color:white;
-    text-decoration:none;
+    border:none;
     border-radius:5px;
     cursor:pointer;
 }
@@ -120,10 +116,11 @@ nav a{
 .tracker{
     background:white;
     color:black;
-    max-width:500px;
+    max-width:600px;
     margin:auto;
     padding:20px;
     border-radius:10px;
+    margin-bottom:40px;
 }
 .tracker label{
     display:block;
@@ -142,6 +139,23 @@ nav a{
     display:none;
 }
 
+/* STUDY STEPS */
+.steps{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+.step{
+    background:#1e293b;
+    color:white;
+    padding:15px;
+    margin:10px;
+    border-radius:10px;
+    max-width:200px;
+    text-align:center;
+}
+
 /* PLANNER */
 .planner{
     background:white;
@@ -152,8 +166,9 @@ nav a{
     border-radius:10px;
 }
 .planner input{
-    width:80%;
+    width:70%;
     padding:8px;
+    margin-right:5px;
 }
 .planner button{
     padding:8px;
@@ -173,7 +188,6 @@ nav a{
 }
 </style>
 </head>
-
 <body>
 
 <!-- HEADER -->
@@ -194,51 +208,46 @@ nav a{
     <img src="student_final.png" alt="Student Thinking Image">
 </section>
 
-<!-- LECTURES SECTION -->
+<!-- LECTURES -->
 <section id="lectures" class="section">
-    <h2>Complete NEET Lectures</h2>
+    <h2>Lectures</h2>
 
-    <!-- Physics -->
     <div class="subject">PHYSICS</div>
     <div class="card">
         <h3>Complete 11th Physics</h3>
-        <img src="https://img.youtube.com/vi/WDjcpSCI-uU/hqdefault.jpg" alt="Physics 11th">
-        <button class="btn" onclick="openPlayer('PLJyab0VQDBGWQ1k4Lx2iuVHiiCzRwsu1j')">Open Full Playlist</button>
+        <button onclick="openPlayer('PLJyab0VQDBGWQ1k4Lx2iuVHiiCzRwsu1j')">Open Full Playlist</button>
     </div>
     <div class="card">
         <h3>Complete 12th Physics</h3>
-        <img src="https://img.youtube.com/vi/WDjcpSCI-uU/hqdefault.jpg" alt="Physics 12th">
-        <button class="btn" onclick="openPlayer('PL8_1l_iSLgyQ76qsgw7Xl9Kq0xX5qeQCG')">Open Full Playlist</button>
+        <button onclick="openPlayer('PL8_1l_iSLgyQ76qsgw7Xl9Kq0xX5qeQCG')">Open Full Playlist</button>
     </div>
 
-    <!-- Biology -->
     <div class="subject">BIOLOGY</div>
     <div class="card">
         <h3>Complete Botany</h3>
-        <button class="btn" onclick="openPlayer('PL8_1l_iSLgyTZzDdX7sv73a3NH_u9isuK')">Open Full Playlist</button>
+        <button onclick="openPlayer('PL8_1l_iSLgyTZzDdX7sv73a3NH_u9isuK')">Open Full Playlist</button>
     </div>
     <div class="card">
         <h3>Complete 11th Zoology</h3>
-        <button class="btn" onclick="openPlayer('PL8_1l_iSLgyQ1NtwYwmqfmZNeTPI7HDJ7')">Open Full Playlist</button>
+        <button onclick="openPlayer('PL8_1l_iSLgyQ1NtwYwmqfmZNeTPI7HDJ7')">Open Full Playlist</button>
     </div>
     <div class="card">
         <h3>Complete 12th Zoology</h3>
-        <button class="btn" onclick="openPlayer('PL8_1l_iSLgySbc4z_zuXsAF5JPef8cxfX')">Open Full Playlist</button>
+        <button onclick="openPlayer('PL8_1l_iSLgySbc4z_zuXsAF5JPef8cxfX')">Open Full Playlist</button>
     </div>
 
-    <!-- Chemistry -->
     <div class="subject">CHEMISTRY</div>
     <div class="card">
         <h3>Physical Chemistry</h3>
-        <button class="btn" onclick="openPlayer('PL8_1l_iSLgyQgrsd1cPdbSHmjBg_ljvYr')">Open Full Playlist</button>
+        <button onclick="openPlayer('PL8_1l_iSLgyQgrsd1cPdbSHmjBg_ljvYr')">Open Full Playlist</button>
     </div>
     <div class="card">
         <h3>Organic Chemistry</h3>
-        <button class="btn" onclick="openPlayer('PLJyab0VQDBGUz_l7R4smge3MYHNCskNwu')">Open Full Playlist</button>
+        <button onclick="openPlayer('PLJyab0VQDBGUz_l7R4smge3MYHNCskNwu')">Open Full Playlist</button>
     </div>
     <div class="card">
         <h3>Inorganic Chemistry</h3>
-        <button class="btn" onclick="openPlayer('PLJyab0VQDBGWflXzSQe6JdpB57s2jGhHT')">Open Full Playlist</button>
+        <button onclick="openPlayer('PLJyab0VQDBGWflXzSQe6JdpB57s2jGhHT')">Open Full Playlist</button>
     </div>
 </section>
 
@@ -249,7 +258,7 @@ nav a{
             <iframe id="videoFrame" width="100%" height="400" src="" allowfullscreen></iframe>
         </div>
         <div class="playlist" id="playlist">
-            <p>Click videos on YouTube player to watch inside the website.</p>
+            <p>Click videos in the player to watch inside the website.</p>
         </div>
     </div>
 </section>
@@ -258,9 +267,36 @@ nav a{
 <section id="tracker" class="section">
     <h2>Lecture Tracker</h2>
     <div class="tracker" id="trackerList">
-        <label><input type="checkbox" onchange="showPopup()"> Physics Lecture 1</label>
-        <label><input type="checkbox" onchange="showPopup()"> Physics Lecture 2</label>
-        <label><input type="checkbox" onchange="showPopup()"> Physics Lecture 3</label>
+        <!-- Physics -->
+        <label><input type="checkbox" onchange="showPopup()"> Physics 11 Lecture 1</label>
+        <label><input type="checkbox" onchange="showPopup()"> Physics 11 Lecture 2</label>
+        <label><input type="checkbox" onchange="showPopup()"> Physics 12 Lecture 1</label>
+        <label><input type="checkbox" onchange="showPopup()"> Physics 12 Lecture 2</label>
+
+        <!-- Biology -->
+        <label><input type="checkbox" onchange="showPopup()"> Botany Lecture 1</label>
+        <label><input type="checkbox" onchange="showPopup()"> Botany Lecture 2</label>
+        <label><input type="checkbox" onchange="showPopup()"> Zoology 11 Lecture 1</label>
+        <label><input type="checkbox" onchange="showPopup()"> Zoology 12 Lecture 1</label>
+
+        <!-- Chemistry -->
+        <label><input type="checkbox" onchange="showPopup()"> Physical Chemistry Lecture 1</label>
+        <label><input type="checkbox" onchange="showPopup()"> Organic Chemistry Lecture 1</label>
+        <label><input type="checkbox" onchange="showPopup()"> Inorganic Chemistry Lecture 1</label>
+    </div>
+</section>
+
+<!-- STUDY STEPS -->
+<section class="section">
+    <h2>Study Steps</h2>
+    <div class="steps">
+        <div class="step">
+            <img src="teacher_question.png" width="80" alt="Teacher">
+            <p>Revise notes</p>
+        </div>
+        <div class="step">
+            <p>Practice PYQs (Practice is the key!)</p>
+        </div>
     </div>
 </section>
 
@@ -278,21 +314,18 @@ nav a{
 <div class="popup" id="popup">🎉 Great Job! Lecture Completed!</div>
 
 <script>
-// Open player and populate playlist dynamically
 function openPlayer(playlistId){
     document.getElementById("player").style.display="block";
     document.getElementById("videoFrame").src="https://www.youtube.com/embed/?listType=playlist&list="+playlistId;
     window.scrollTo({ top: document.getElementById("player").offsetTop, behavior: 'smooth' });
 }
 
-// Show motivational popup
 function showPopup(){
     let p=document.getElementById("popup");
     p.style.display="block";
     setTimeout(()=>{ p.style.display="none"; },2000);
 }
 
-// Add task to planner
 function addTask(){
     let t=document.getElementById("task").value;
     if(t.trim()==="") return;
@@ -305,6 +338,7 @@ function addTask(){
 
 </body>
 </html>
+
 
 
 

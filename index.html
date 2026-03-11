@@ -6,9 +6,10 @@
 <title>NEET WrapUp</title>
 
 <style>
+
 body{
-font-family: Arial, sans-serif;
 margin:0;
+font-family:Arial, sans-serif;
 background:#0f172a;
 color:white;
 text-align:center;
@@ -16,32 +17,48 @@ text-align:center;
 
 header{
 background:#1e293b;
-padding:20px;
+padding:25px;
 }
 
 h1{
 color:#facc15;
+margin:0;
 }
 
-section{
-padding:40px 20px;
+.tagline{
+font-size:18px;
+margin-top:5px;
 }
 
-.video-container{
+.hero{
+padding:60px 20px;
+background:#111827;
+}
+
+.hero h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.section{
+padding:50px 20px;
+}
+
+.video-box{
 max-width:800px;
-margin:auto;
+margin:40px auto;
 }
 
 iframe{
 width:100%;
-height:400px;
+height:420px;
 border:none;
 border-radius:10px;
 }
 
 button{
 margin-top:15px;
-padding:12px 20px;
+padding:12px 25px;
 font-size:16px;
 border:none;
 border-radius:8px;
@@ -54,11 +71,33 @@ button:hover{
 background:#0ea5e9;
 }
 
-footer{
-background:#1e293b;
-padding:20px;
-margin-top:40px;
+.strategy{
+max-width:700px;
+margin:auto;
+text-align:left;
+font-size:18px;
+line-height:1.6;
 }
+
+footer{
+margin-top:40px;
+background:#1e293b;
+padding:25px;
+font-size:14px;
+}
+
+@media (max-width:600px){
+
+iframe{
+height:250px;
+}
+
+.hero h2{
+font-size:24px;
+}
+
+}
+
 </style>
 </head>
 
@@ -66,58 +105,144 @@ margin-top:40px;
 
 <header>
 <h1>NEET WrapUp</h1>
-<p>Finish Your Syllabus Smarter</p>
+<p class="tagline">Finish Your Syllabus Smarter</p>
 </header>
 
-<section>
+<section class="hero">
+<h2>Complete Your NEET Preparation in One Place</h2>
+<p>Best YouTube playlists for Physics, Biology and Chemistry organised for NEET aspirants.</p>
+</section>
+
+<section class="section">
+<h2>How To Study</h2>
+
+<div class="strategy">
+
+<p><b>1. Watch Lecture</b><br>
+Start by watching the lecture from the playlist.</p>
+
+<p><b>2. Make Notes (Optional)</b><br>
+If you have time, make short notes. Otherwise focus on understanding.</p>
+
+<p><b>3. Revise Notes</b><br>
+Revise important concepts regularly.</p>
+
+<p><b>4. Practice PYQs</b><br>
+Solve NEET previous year questions after finishing each chapter.</p>
+
+</div>
+</section>
+
+<section class="section">
 <h2>Physics</h2>
 
-<div class="video-container">
+<div class="video-box">
+<h3>Complete 11th Physics</h3>
+
 <iframe src="https://www.youtube.com/embed/videoseries?list=PLJyab0VQDBGWQ1k4Lx2iuVHiiCzRwsu1j"></iframe>
 
-<br>
-
 <a href="https://youtube.com/playlist?list=PLJyab0VQDBGWQ1k4Lx2iuVHiiCzRwsu1j" target="_blank">
-<button>Open Full Playlist on YouTube</button>
+<br><button>Open Full Playlist on YouTube</button>
 </a>
 
 </div>
+
+<div class="video-box">
+<h3>Complete 12th Physics</h3>
+
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgyQ76qsgw7Xl9Kq0xX5qeQCG"></iframe>
+
+<a href="https://youtube.com/playlist?list=PL8_1l_iSLgyQ76qsgw7Xl9Kq0xX5qeQCG" target="_blank">
+<br><button>Open Full Playlist on YouTube</button>
+</a>
+
+</div>
+
 </section>
 
-<section>
-<h2>Botany</h2>
+<section class="section">
+<h2>Biology</h2>
 
-<div class="video-container">
+<div class="video-box">
+<h3>Complete Botany</h3>
+
 <iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgyTZzDdX7sv73a3NH_u9isuK"></iframe>
 
-<br>
-
 <a href="https://youtube.com/playlist?list=PL8_1l_iSLgyTZzDdX7sv73a3NH_u9isuK" target="_blank">
-<button>Open Full Playlist on YouTube</button>
+<br><button>Open Full Playlist on YouTube</button>
 </a>
 
 </div>
-</section>
 
-<section>
-<h2>Zoology</h2>
+<div class="video-box">
+<h3>Complete 11th Zoology</h3>
 
-<div class="video-container">
 <iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgyQ1NtwYwmqfmZNeTPI7HDJ7"></iframe>
 
-<br>
-
 <a href="https://youtube.com/playlist?list=PL8_1l_iSLgyQ1NtwYwmqfmZNeTPI7HDJ7" target="_blank">
-<button>Open Full Playlist on YouTube</button>
+<br><button>Open Full Playlist on YouTube</button>
 </a>
 
 </div>
+
+<div class="video-box">
+<h3>Complete 12th Zoology</h3>
+
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgySbc4z_zuXsAF5JPef8cxfX"></iframe>
+
+<a href="https://youtube.com/playlist?list=PL8_1l_iSLgySbc4z_zuXsAF5JPef8cxfX" target="_blank">
+<br><button>Open Full Playlist on YouTube</button>
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+<h2>Chemistry</h2>
+
+<div class="video-box">
+<h3>Physical Chemistry</h3>
+
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgyQgrsd1cPdbSHmjBg_ljvYr"></iframe>
+
+<a href="https://youtube.com/playlist?list=PL8_1l_iSLgyQgrsd1cPdbSHmjBg_ljvYr" target="_blank">
+<br><button>Open Full Playlist on YouTube</button>
+</a>
+
+</div>
+
+<div class="video-box">
+<h3>Inorganic Chemistry</h3>
+
+<iframe src="https://www.youtube.com/embed/videoseries?list=PLJyab0VQDBGWflXzSQe6JdpB57s2jGhHT"></iframe>
+
+<a href="https://youtube.com/playlist?list=PLJyab0VQDBGWflXzSQe6JdpB57s2jGhHT" target="_blank">
+<br><button>Open Full Playlist on YouTube</button>
+</a>
+
+</div>
+
+<div class="video-box">
+<h3>Organic Chemistry</h3>
+
+<iframe src="https://www.youtube.com/embed/videoseries?list=PLJyab0VQDBGUz_l7R4smge3MYHNCskNwu"></iframe>
+
+<a href="https://youtube.com/playlist?list=PLJyab0VQDBGUz_l7R4smge3MYHNCskNwu" target="_blank">
+<br><button>Open Full Playlist on YouTube</button>
+</a>
+
+</div>
+
 </section>
 
 <footer>
+
 <p>Built for NEET Aspirants by NEET Aspirants</p>
+
 </footer>
 
 </body>
 </html>
+
 

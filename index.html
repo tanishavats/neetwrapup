@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEET WrapUp</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(180deg,#0f172a,#020617);color:white}
+
+/* HEADER */
+header{background:#020617;padding:20px 15px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.08)}
+header h1{margin:0;font-size:34px;color:#38bdf8}
+header p{opacity:0.8;font-size:14px}
+
+nav{display:flex;justify-content:center;gap:20px;margin-top:12px;flex-wrap:wrap}
+nav a{color:#facc15;text-decoration:none;font-weight:bold;font-size:14px}
+nav a:hover{color:#38bdf8}
+
+/* HERO SECTION */
+.hero{
+padding:70px 20px;
+text-align:center;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+border-bottom:1px solid rgba(255,255,255,0.05)
+}
+
+.hero h2{
+font-size:38px;
+margin-bottom:15px;
+color:#facc15
+}
+
+.hero p{
+max-width:650px;
+margin:auto;
+opacity:0.9;
+font-size:16px;
+line-height:1.6
+}
+
+.hero button{
+margin-top:25px;
+padding:12px 22px;
+font-size:15px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+cursor:pointer;
+transition:0.25s
+}
+
+.hero button:hover{
+background:#0ea5e9
+}
+
+section{padding:45px 15px;max-width:1100px;margin:auto}
+
+h2{margin-bottom:18px;color:#facc15}
+
+.card{
+background:#1e293b;
+padding:18px;
+border-radius:12px;
+margin-top:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.3)
+}
+
+.subject{margin-top:30px}
+
+/* Responsive video */
+.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-top:10px}
+.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+.step{margin:10px 0;padding:12px;background:#1e293b;border-radius:8px;font-size:14px;border-left:4px solid #38bdf8}
+
+.tracker{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.tracker label{background:#1e293b;padding:10px;border-radius:8px;display:block;font-size:14px}
+
+footer{background:#020617;text-align:center;padding:20px;margin-top:40px;font-size:14px;border-top:1px solid rgba(255,255,255,0.08)}
+
+button{padding:10px 16px;border:none;border-radius:8px;background:#38bdf8;color:black;font-weight:bold;cursor:pointer}
+
+input{padding:10px;border-radius:8px;border:none;margin-right:10px}
+
+ul{margin-top:15px;padding-left:20px}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width:600px){
+
+.hero h2{font-size:28px}
+
+header h1{font-size:26px}
+
+section{padding:30px 12px}
+
+button{width:100%;margin-top:10px}
+
+#taskInput{width:100%;margin-bottom:10px}
+
+.tracker{grid-template-columns:1fr}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>NEET WrapUp</h1>
+<p>NEET WrapUp — Finish Your Syllabus Smarter</p>
+<nav>
+<a href="#goal">Goal</a>
+<a href="#study">How To Study</a>
+<a href="#lectures">Lectures</a>
+<a href="#tracker">Tracker</a>
+<a href="#planner">Planner</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Finish Your NEET Syllabus Faster</h2>
+<p>NEET WrapUp provides carefully selected lecture playlists and a simple strategy so NEET aspirants can complete their syllabus quickly, revise effectively, and practice more PYQs.</p>
+<button onclick="document.getElementById('lectures').scrollIntoView({behavior:'smooth'})">Start Studying</button>
+</section>
+
+<section id="goal">
+<h2>Our Goal</h2>
+<div class="card">
+<p>NEET WrapUp is built to help NEET aspirants complete their syllabus in the shortest possible time. Many students waste months searching for the right lectures and strategy. This website provides carefully selected playlists and a simple study method so students can finish their syllabus faster, revise more, and practice NEET PYQs effectively.</p>
+</div>
+</section>
+
+<section id="study">
+<h2>How To Study</h2>
+<div class="step">1. Watch the lecture carefully and focus on understanding the concept.</div>
+<div class="step">2. Make notes if you have time. If the lecture already provides notes, you can skip making separate notes.</div>
+<div class="step">3. Revise the notes regularly to strengthen concepts.</div>
+<div class="step">4. Practice NEET Previous Year Questions (PYQs) after completing topics.</div>
+</section>
+
+<section id="lectures">
+<h2>Lecture Playlists</h2>
+
+<div class="subject">
+<h3>Physics</h3>
+
+<div class="card">
+<p>Complete Class 11 Physics</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/videoseries?list=PLJyab0VQDBGWQ1k4Lx2iuVHiiCzRwsu1j" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="card">
+<p>Complete Class 12 Physics</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgyQ76qsgw7Xl9Kq0xX5qeQCG" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+
+<div class="subject">
+<h3>Biology</h3>
+
+<div class="card">
+<p>Complete Botany</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgyTZzDdX7sv73a3NH_u9isuK" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="card">
+<p>Complete Class 11 Zoology</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgyQ1NtwYwmqfmZNeTPI7HDJ7" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="card">
+<p>Complete Class 12 Zoology</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgySbc4z_zuXsAF5JPef8cxfX" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+
+<div class="subject">
+<h3>Chemistry</h3>
+
+<div class="card">
+<p>Physical Chemistry</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL8_1l_iSLgyQgrsd1cPdbSHmjBg_ljvYr" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="card">
+<p>Organic Chemistry</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/videoseries?list=PLJyab0VQDBGUz_l7R4smge3MYHNCskNwu" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="card">
+<p>Inorganic Chemistry</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/videoseries?list=PLJyab0VQDBGWflXzSQe6JdpB57s2jGhHT" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="tracker">
+<h2>NEET Syllabus Tracker</h2>
+<p>Mark topics you have completed to track your progress.</p>
+<div class="tracker">
+<label><input type="checkbox"> Physics 11 Completed</label>
+<label><input type="checkbox"> Physics 12 Completed</label>
+<label><input type="checkbox"> Botany Completed</label>
+<label><input type="checkbox"> Zoology 11 Completed</label>
+<label><input type="checkbox"> Zoology 12 Completed</label>
+<label><input type="checkbox"> Physical Chemistry Completed</label>
+<label><input type="checkbox"> Organic Chemistry Completed</label>
+<label><input type="checkbox"> Inorganic Chemistry Completed</label>
+</div>
+</section>
+
+<section id="planner">
+<h2>Daily Study Planner</h2>
+<div class="card">
+<p>Plan your daily NEET preparation tasks.</p>
+<input type="text" id="taskInput" placeholder="Enter study task">
+<button onclick="addTask()">Add Task</button>
+<ul id="taskList"></ul>
+</div>
+</section>
+
+<footer>
+<p>© 2026 NEET WrapUp | Helping NEET Aspirants Complete Syllabus Faster</p>
+</footer>
+
+<script>
+function addTask(){
+let input=document.getElementById("taskInput");
+if(input.value.trim()==="") return;
+let li=document.createElement("li");
+li.textContent=input.value;
+document.getElementById("taskList").appendChild(li);
+input.value="";
+}
+</script>
+
+</body>
+</html>

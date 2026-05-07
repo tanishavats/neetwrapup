@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NEET WrapUp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neet WrapUp</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
+font-family:Arial,sans-serif;
 }
 
 body{
@@ -24,35 +21,28 @@ overflow-x:hidden;
 }
 
 /* HEADER */
+
 header{
-width:100%;
-padding:14px 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:18px 22px;
 background:#020617;
+border-bottom:1px solid rgba(255,255,255,0.08);
 position:sticky;
 top:0;
-z-index:1000;
-border-bottom:1px solid rgba(255,255,255,0.08);
+z-index:999;
 }
 
-.logo-box{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.logo-box img{
-width:55px;
-height:55px;
-object-fit:contain;
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
 }
 
 nav{
 display:flex;
-gap:14px;
-flex-wrap:wrap;
+gap:18px;
 }
 
 nav a{
@@ -68,13 +58,14 @@ color:#38bdf8;
 }
 
 /* HERO */
+
 .hero{
 max-width:1200px;
 margin:auto;
-padding:60px 20px;
+padding:70px 20px;
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 gap:40px;
 flex-wrap:wrap;
 }
@@ -86,9 +77,9 @@ min-width:280px;
 
 .hero-text h1{
 font-size:42px;
-color:#facc15;
-margin-bottom:20px;
 line-height:1.2;
+margin-bottom:20px;
+color:#facc15;
 }
 
 .hero-text p{
@@ -106,8 +97,8 @@ border-radius:10px;
 background:#38bdf8;
 color:black;
 font-weight:bold;
-font-size:15px;
 cursor:pointer;
+font-size:15px;
 transition:0.2s;
 }
 
@@ -118,22 +109,23 @@ transform:translateY(-2px);
 
 .hero-image{
 flex:1;
-min-width:260px;
 text-align:center;
+min-width:260px;
 }
 
 .hero-image img{
 width:100%;
-max-width:360px;
+max-width:370px;
 border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,0.4);
+box-shadow:0 12px 35px rgba(0,0,0,0.4);
 }
 
 /* GENERAL */
+
 section{
 max-width:1150px;
 margin:auto;
-padding:50px 20px;
+padding:55px 20px;
 }
 
 .main-title{
@@ -144,46 +136,43 @@ color:#facc15;
 }
 
 .subject-title{
-width:max-content;
-margin:40px auto 25px auto;
-padding:12px 28px;
 background:#facc15;
 color:black;
+width:max-content;
+margin:40px auto 25px auto;
+padding:12px 30px;
+border-radius:12px;
 font-weight:bold;
 font-size:22px;
-border-radius:12px;
-box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
 .lecture-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+gap:24px;
 }
 
 .card{
 background:white;
 color:black;
-padding:18px;
+padding:20px;
 border-radius:18px;
-box-shadow:0 12px 30px rgba(0,0,0,0.35);
-transition:0.2s;
-}
-
-.card:hover{
-transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
 }
 
 .card h3{
-font-size:20px;
 margin-bottom:12px;
 }
 
 .card p{
 font-size:14px;
+line-height:1.6;
 opacity:0.8;
-margin-bottom:16px;
-line-height:1.5;
+margin-bottom:18px;
+}
+
+.card a{
+text-decoration:none;
 }
 
 .card button{
@@ -199,72 +188,25 @@ transition:0.2s;
 }
 
 .card button:hover{
-background:#1d4ed8;
-}
-
-/* PLAYER */
-.player-box{
-display:none;
-margin-top:25px;
-background:#111827;
-padding:20px;
-border-radius:18px;
-}
-
-.player-layout{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.player-video{
-flex:2;
-min-width:300px;
-}
-
-.player-video iframe{
-width:100%;
-height:450px;
-border:none;
-border-radius:12px;
-}
-
-.player-playlist{
-flex:1;
-background:#1e293b;
-padding:16px;
-border-radius:12px;
-max-height:450px;
-overflow-y:auto;
-min-width:240px;
-}
-
-.player-playlist h4{
-margin-bottom:15px;
-color:#facc15;
-}
-
-.player-playlist p{
-margin-bottom:12px;
-font-size:14px;
-line-height:1.5;
+background:#2563eb;
 }
 
 /* TRACKER */
+
 .tracker-main{
 display:flex;
 justify-content:center;
-gap:15px;
+gap:14px;
 flex-wrap:wrap;
-margin-bottom:25px;
+margin-bottom:30px;
 }
 
 .tracker-main button{
 padding:12px 24px;
-background:#38bdf8;
-color:black;
 border:none;
 border-radius:12px;
+background:#38bdf8;
+color:black;
 font-weight:bold;
 cursor:pointer;
 font-size:15px;
@@ -273,47 +215,42 @@ font-size:15px;
 .tracker-box{
 display:none;
 background:#1e293b;
-padding:22px;
+padding:25px;
 border-radius:18px;
-margin-top:15px;
-}
-
-.tracker-box h3{
-color:#facc15;
-margin-bottom:15px;
+margin-top:20px;
 }
 
 .topic-box{
 background:#0f172a;
-padding:15px;
+padding:18px;
 border-radius:12px;
-margin-bottom:16px;
+margin-bottom:18px;
 }
 
 .topic-box h4{
 margin-bottom:12px;
+color:#facc15;
 }
 
-.topic-box label{
-display:block;
-margin:10px 0;
+.topic-box textarea{
+width:100%;
+height:120px;
+padding:14px;
+border:none;
+border-radius:10px;
+resize:vertical;
 font-size:14px;
-cursor:pointer;
-}
-
-.topic-box input{
-margin-right:10px;
-transform:scale(1.1);
+outline:none;
 }
 
 /* STUDY STEPS */
+
 .study-wrap{
 display:flex;
-align-items:center;
 justify-content:center;
-gap:30px;
+align-items:center;
+gap:35px;
 flex-wrap:wrap;
-margin-top:20px;
 }
 
 .study-image img{
@@ -325,22 +262,22 @@ border-radius:20px;
 background:#1e293b;
 padding:25px;
 border-radius:18px;
-max-width:420px;
+max-width:430px;
 }
 
 .study-card h3{
-color:#facc15;
+font-size:26px;
 margin-bottom:18px;
-font-size:24px;
+color:#facc15;
 }
 
 .study-card p{
-margin:14px 0;
-line-height:1.7;
-font-size:15px;
+margin:15px 0;
+line-height:1.8;
 }
 
 /* PLANNER */
+
 .planner{
 background:#1e293b;
 padding:25px;
@@ -378,64 +315,60 @@ margin-top:18px;
 }
 
 #taskList li{
+list-style:none;
 background:#0f172a;
 padding:12px;
 border-radius:10px;
 margin-bottom:10px;
-list-style:none;
 }
 
 /* POPUP */
+
 .popup{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#22c55e;
-color:white;
-padding:14px 18px;
+padding:14px 20px;
 border-radius:12px;
 font-weight:bold;
 display:none;
-z-index:9999;
 box-shadow:0 10px 25px rgba(0,0,0,0.3);
+z-index:9999;
 }
 
+/* FOOTER */
+
 footer{
-margin-top:50px;
 padding:25px;
 text-align:center;
 background:#020617;
-font-size:14px;
+margin-top:50px;
 opacity:0.8;
 }
 
 /* MOBILE */
+
 @media(max-width:768px){
 
 .hero{
 padding:40px 18px;
 }
 
-.hero-text h1{
-font-size:30px;
-text-align:center;
-}
-
-.hero-text p{
-text-align:center;
-font-size:15px;
-}
-
 .hero-text{
 text-align:center;
 }
 
-.hero-text button{
-width:100%;
+.hero-text h1{
+font-size:30px;
 }
 
-.player-video iframe{
-height:240px;
+.hero-text p{
+font-size:15px;
+}
+
+.hero-text button{
+width:100%;
 }
 
 .main-title{
@@ -451,15 +384,23 @@ width:100%;
 max-width:300px;
 }
 
+nav{
+gap:10px;
 }
+
+}
+
 </style>
 </head>
+
 <body>
 
 <!-- HEADER -->
+
 <header>
-<div class="logo-box">
-<img src="https://i.imgur.com/8Km9tLL.png" alt="Logo">
+
+<div class="logo">
+Neet WrapUp
 </div>
 
 <nav>
@@ -467,240 +408,340 @@ max-width:300px;
 <a href="#tracker">Tracker</a>
 <a href="#planner">Planner</a>
 </nav>
+
 </header>
 
 <!-- HERO -->
+
 <section class="hero">
+
 <div class="hero-text">
+
 <h1>Finish Your NEET Syllabus Faster</h1>
+
 <p>
-NEET WrapUp helps students study from the best lectures without wasting time searching for them. Complete your syllabus faster and stay focused.
+Neet WrapUp helps students study from the best lectures without wasting time searching for them. Complete your syllabus faster and stay focused.
 </p>
+
 <button onclick="document.getElementById('lectures').scrollIntoView({behavior:'smooth'})">
 Start Studying
 </button>
+
 </div>
 
 <div class="hero-image">
+
 <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=900&auto=format&fit=crop" alt="Student">
+
 </div>
+
 </section>
 
 <!-- LECTURES -->
+
 <section id="lectures">
+
 <h2 class="main-title">NEET Lectures</h2>
 
+<!-- Physics -->
+
 <div class="subject-title">Physics</div>
+
 <div class="lecture-grid">
 
 <div class="card">
+
 <h3>Complete 11th Physics</h3>
-<p>Carefully selected full playlist for NEET Physics preparation.</p>
-<button onclick="openPlayer('PLJyab0VQDBGWQ1k4Lx2iuVHiiCzRwsu1j')">Open Full Playlist</button>
+
+<p>
+Carefully selected full playlist for NEET Physics preparation.
+</p>
+
+<a href="https://youtube.com/playlist?list=PLJyab0VQDBGWQ1k4Lx2iuVHiiCzRwsu1j" target="_blank">
+
+<button>Open Full Playlist</button>
+
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>Complete 12th Physics</h3>
-<p>Complete Class 12 Physics lectures in one place.</p>
-<button onclick="openPlayer('PL8_1l_iSLgyQ76qsgw7Xl9Kq0xX5qeQCG')">Open Full Playlist</button>
+
+<p>
+Complete Class 12 Physics lectures in one place.
+</p>
+
+<a href="https://youtube.com/playlist?list=PL8_1l_iSLgyQ76qsgw7Xl9Kq0xX5qeQCG" target="_blank">
+
+<button>Open Full Playlist</button>
+
+</a>
+
 </div>
 
 </div>
+
+<!-- Biology -->
 
 <div class="subject-title">Biology</div>
+
 <div class="lecture-grid">
 
 <div class="card">
+
 <h3>Complete Botany</h3>
-<p>Complete Botany playlist for NEET preparation.</p>
-<button onclick="openPlayer('PL8_1l_iSLgyTZzDdX7sv73a3NH_u9isuK')">Open Full Playlist</button>
+
+<p>
+Complete Botany playlist for NEET preparation.
+</p>
+
+<a href="https://youtube.com/playlist?list=PL8_1l_iSLgyTZzDdX7sv73a3NH_u9isuK" target="_blank">
+
+<button>Open Full Playlist</button>
+
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>Complete Zoology</h3>
-<p>Complete Zoology playlist for NEET Biology.</p>
-<button onclick="openPlayer('PL8_1l_iSLgyQ1NtwYwmqfmZNeTPI7HDJ7')">Open Full Playlist</button>
+
+<p>
+Complete Zoology playlist for NEET Biology.
+</p>
+
+<a href="https://youtube.com/playlist?list=PL8_1l_iSLgyQ1NtwYwmqfmZNeTPI7HDJ7" target="_blank">
+
+<button>Open Full Playlist</button>
+
+</a>
+
 </div>
 
 </div>
+
+<!-- Chemistry -->
 
 <div class="subject-title">Chemistry</div>
+
 <div class="lecture-grid">
 
 <div class="card">
+
 <h3>Physical Chemistry</h3>
-<p>Master NEET Physical Chemistry concepts.</p>
-<button onclick="openPlayer('PL8_1l_iSLgyQgrsd1cPdbSHmjBg_ljvYr')">Open Full Playlist</button>
+
+<p>
+Master NEET Physical Chemistry concepts.
+</p>
+
+<a href="https://youtube.com/playlist?list=PL8_1l_iSLgyQgrsd1cPdbSHmjBg_ljvYr" target="_blank">
+
+<button>Open Full Playlist</button>
+
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>Organic Chemistry</h3>
-<p>Complete Organic Chemistry lectures for NEET.</p>
-<button onclick="openPlayer('PLJyab0VQDBGUz_l7R4smge3MYHNCskNwu')">Open Full Playlist</button>
+
+<p>
+Complete Organic Chemistry lectures for NEET.
+</p>
+
+<a href="https://youtube.com/playlist?list=PLJyab0VQDBGUz_l7R4smge3MYHNCskNwu" target="_blank">
+
+<button>Open Full Playlist</button>
+
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>Inorganic Chemistry</h3>
-<p>Complete Inorganic Chemistry lectures in one place.</p>
-<button onclick="openPlayer('PLJyab0VQDBGWflXzSQe6JdpB57s2jGhHT')">Open Full Playlist</button>
-</div>
 
-</div>
-
-<!-- PLAYER -->
-<div class="player-box" id="playerBox">
-<div class="player-layout">
-
-<div class="player-video">
-<iframe id="playerFrame" allowfullscreen></iframe>
-</div>
-
-<div class="player-playlist">
-<h4>Playlist Opened Inside Website</h4>
 <p>
-You can now watch the playlist directly inside NEET WrapUp without leaving the website.
+Complete Inorganic Chemistry lectures in one place.
 </p>
-<p>
-Use the playlist menu inside the YouTube player to switch lectures.
-</p>
-</div>
+
+<a href="https://youtube.com/playlist?list=PLJyab0VQDBGWflXzSQe6JdpB57s2jGhHT" target="_blank">
+
+<button>Open Full Playlist</button>
+
+</a>
 
 </div>
+
 </div>
 
 </section>
 
 <!-- TRACKER -->
+
 <section id="tracker">
+
 <h2 class="main-title">Lecture Tracker</h2>
 
 <div class="tracker-main">
+
 <button onclick="showTracker('physicsTracker')">Physics</button>
+
 <button onclick="showTracker('biologyTracker')">Biology</button>
+
 <button onclick="showTracker('chemistryTracker')">Chemistry</button>
+
 </div>
 
-<!-- PHYSICS -->
+<!-- Physics -->
+
 <div class="tracker-box" id="physicsTracker">
-<h3>Physics</h3>
 
 <div class="topic-box">
-<h4>11th Physics Playlist</h4>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 1 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 2 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 3 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 4 Completed</label>
+
+<h4>11th Physics</h4>
+
+<textarea placeholder="Write completed lectures or chapters here..."></textarea>
+
 </div>
 
 <div class="topic-box">
-<h4>12th Physics Playlist</h4>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 1 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 2 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 3 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 4 Completed</label>
-</div>
+
+<h4>12th Physics</h4>
+
+<textarea placeholder="Write completed lectures or chapters here..."></textarea>
+
 </div>
 
-<!-- BIOLOGY -->
+</div>
+
+<!-- Biology -->
+
 <div class="tracker-box" id="biologyTracker">
-<h3>Biology</h3>
 
 <div class="topic-box">
-<h4>Botany Playlist</h4>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 1 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 2 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 3 Completed</label>
+
+<h4>Botany</h4>
+
+<textarea placeholder="Write completed lectures or chapters here..."></textarea>
+
 </div>
 
 <div class="topic-box">
-<h4>Zoology Playlist</h4>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 1 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 2 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 3 Completed</label>
-</div>
+
+<h4>Zoology</h4>
+
+<textarea placeholder="Write completed lectures or chapters here..."></textarea>
+
 </div>
 
-<!-- CHEMISTRY -->
+</div>
+
+<!-- Chemistry -->
+
 <div class="tracker-box" id="chemistryTracker">
-<h3>Chemistry</h3>
 
 <div class="topic-box">
+
 <h4>Physical Chemistry</h4>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 1 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 2 Completed</label>
+
+<textarea placeholder="Write completed lectures or chapters here..."></textarea>
+
 </div>
 
 <div class="topic-box">
+
 <h4>Organic Chemistry</h4>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 1 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 2 Completed</label>
+
+<textarea placeholder="Write completed lectures or chapters here..."></textarea>
+
 </div>
 
 <div class="topic-box">
+
 <h4>Inorganic Chemistry</h4>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 1 Completed</label>
-<label><input type="checkbox" onchange="showPopup()"> Lecture 2 Completed</label>
+
+<textarea placeholder="Write completed lectures or chapters here..."></textarea>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- STUDY -->
+<!-- STUDY STEPS -->
+
 <section>
+
 <h2 class="main-title">Study Steps</h2>
 
 <div class="study-wrap">
 
 <div class="study-image">
+
 <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?q=80&w=900&auto=format&fit=crop" alt="Teacher">
+
 </div>
 
 <div class="study-card">
+
 <h3>Done With The Lecture?</h3>
+
 <p>1. Now revise notes regularly.</p>
+
 <p>2. Practice PYQs consistently.</p>
+
 <p><b>PYQ practice is the key of success.</b></p>
+
 </div>
 
 </div>
+
 </section>
 
 <!-- PLANNER -->
+
 <section id="planner">
+
 <h2 class="main-title">Daily Study Planner</h2>
 
 <div class="planner">
+
 <div class="planner-top">
+
 <input type="text" id="taskInput" placeholder="Enter study task">
+
 <button onclick="addTask()">Add Task</button>
+
 </div>
 
 <ul id="taskList"></ul>
+
 </div>
+
 </section>
 
+<!-- POPUP -->
+
 <div class="popup" id="popup">
-🎉 Great Job! Lecture Completed!
+
+🎉 Great Job! Progress Saved!
+
 </div>
 
+<!-- FOOTER -->
+
 <footer>
-© 2026 NEET WrapUp | Helping NEET Aspirants Study Smarter
+
+© 2026 Neet WrapUp | Helping NEET Aspirants Study Smarter
+
 </footer>
 
 <script>
-
-function openPlayer(playlistId){
-
-const playerBox = document.getElementById('playerBox');
-const playerFrame = document.getElementById('playerFrame');
-
-playerBox.style.display = 'block';
-
-playerFrame.src = `https://www.youtube.com/embed/videoseries?list=${playlistId}`;
-
-playerBox.scrollIntoView({behavior:'smooth'});
-}
 
 function showTracker(id){
 
@@ -711,6 +752,7 @@ box.style.display='none';
 });
 
 document.getElementById(id).style.display='block';
+
 }
 
 function addTask(){
@@ -720,22 +762,36 @@ let input = document.getElementById('taskInput');
 if(input.value.trim()==='') return;
 
 let li = document.createElement('li');
+
 li.textContent = input.value;
 
 document.getElementById('taskList').appendChild(li);
 
 input.value='';
+
 }
 
 function showPopup(){
 
 const popup = document.getElementById('popup');
+
 popup.style.display='block';
 
 setTimeout(()=>{
 popup.style.display='none';
 },2000);
+
 }
+
+document.querySelectorAll('textarea').forEach(area=>{
+
+area.addEventListener('change', ()=>{
+
+showPopup();
+
+});
+
+});
 
 </script>
 
